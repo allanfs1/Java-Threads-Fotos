@@ -62,7 +62,7 @@ public class Foto implements Runnable{
                 }
             }
             
-            ImageIO.write(image, "jpg", new File("C:\\Users\\Allan\\Pictures\\Foto\\foto2.jpg"));
+            ImageIO.write(image, "png", new File("C:\\Users\\Allan\\Pictures\\Foto\\foto2.png"));
             //ImageIO.write(image, "bmp", new File("C:\\temp\\1.bmp"));
             //ImageIO.write(image, "png", new File("C:\\temp\\1.png"));
 
@@ -85,11 +85,11 @@ public class Foto implements Runnable{
         Thread t1 = new Thread(ft);
         t1.start();
        
-        Foto ft2 = new Foto(5000,2500,10000,4000);
+        Foto ft2 = new Foto(5000,2500,10000,5000);
         Thread t2 = new Thread(ft2);
         t2.start();
         
-       
+     
        
         
        

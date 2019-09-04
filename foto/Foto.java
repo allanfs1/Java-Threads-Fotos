@@ -31,8 +31,7 @@ public class Foto implements Runnable{
     
     
     @Override
-    public void run() {
-        
+    public void run(){   
       this.red();
     }
     
@@ -42,10 +41,10 @@ public class Foto implements Runnable{
         System.out.println("start");
         BufferedImage image = null;
         
-       
+      
         
         try {
-            File imagefile = new File("C:\\Users\\Allan\\Pictures\\Foto\\foto.jpg");
+            File imagefile = new File("C:\\Users\\Allan\\Pictures\\Foto\\foto.png");
             image = ImageIO.read(imagefile);
  
 
@@ -63,7 +62,7 @@ public class Foto implements Runnable{
                 }
             }
             
-            ImageIO.write(image, "jpg", new File("C:\\Users\\Allan\\Pictures\\Foto\\foto02.jpg"));
+            ImageIO.write(image, "jpg", new File("C:\\Users\\Allan\\Pictures\\Foto\\foto2.jpg"));
             //ImageIO.write(image, "bmp", new File("C:\\temp\\1.bmp"));
             //ImageIO.write(image, "png", new File("C:\\temp\\1.png"));
 
@@ -82,17 +81,22 @@ public class Foto implements Runnable{
    
     public static void main(String[] args) {
 
-       //Foto ft = new Foto(0,0,4400,2924); 
-       //Thread t1 = new Thread(ft);
-       //t1.start();
+        Foto ft = new Foto(0,0,5000,2500);
+        Thread t1 = new Thread(ft);
+        t1.start();
        
-       //Foto ft2 = new Foto(4400,2924,8800,5848); 
-       //Thread t2 = new Thread(ft2);
-       //t2.start();
+        Foto ft2 = new Foto(5000,2500,10000,4000);
+        Thread t2 = new Thread(ft2);
+        t2.start();
+        
        
-       Foto ft1 = new Foto(0,0,8800,5848); 
-       Thread t1 = new Thread(ft1);
-       t1.start();
+       
+        
+       
+        
+        
+        
+    
 }
        
 

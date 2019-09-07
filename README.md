@@ -1,6 +1,7 @@
 # Converter Imagens em Escala de Cinza
-# Threads
 
+#### iMG PNG
 ![Filtros e Threads](foto01.png)]
 
-
+#### 2 Threads 
+![Filtros e Threads](foto02.png)]
